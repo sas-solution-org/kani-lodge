@@ -3,373 +3,421 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Lodges & Camps - Kany Lodges | Hébergements Écologiques Afrique</title>
-    <meta name="description" content="Découvrez nos lodges et camps écologiques en Afrique : Safari Masai, Camp Baobab, Lodge Zambèze. Hébergements authentiques et durables.">
-    <meta name="keywords" content="lodge safari Afrique, camp écologique, hébergement durable, safari Kenya, Tanzanie, Zambèze, tourisme responsable">
+    <title>Nos Services - LUNATIC Hospitality</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Kany Lodges & Camps</h2>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
+                    <div class="brand-icon me-3">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="brand-text">LUNATIC</span>
+                </a>
+                
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="index.html">
+                                <span>Accueil</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="about.html">
+                                <span>À Propos</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative" href="lodges.html">
+                                <span>Nos Services</span>
+                                <div class="nav-link-underline active"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="gallery.html">
+                                <span>Galerie</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="contact.html">
+                                <span>Contact</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">À Propos</a></li>
-                <li class="nav-item"><a href="lodges.html" class="nav-link active">Nos Lodges</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Galerie</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="header-image">
-            <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&fit=crop" alt="Lodge safari en Afrique">
-        </div>
-        <div class="header-overlay"></div>
-        <div class="header-content">
-            <h1>Nos Lodges & Camps</h1>
-            <p>Des hébergements authentiques au cœur de la nature africaine</p>
-        </div>
-    </section>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="container">
-            <!-- Lodge Safari Masai -->
-            <section id="masai" class="lodge-detail">
-                <div class="lodge-hero">
-                    <div class="lodge-image-gallery">
-                        <div class="main-image">
-                            <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop" alt="Lodge Safari Masai - Vue principale">
-                        </div>
-                        <div class="thumbnail-gallery">
-                            <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Savane Masai Mara">
-                            <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Faune africaine">
-                            <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Intérieur lodge">
-                        </div>
+        <!-- Page Header -->
+        <section class="page-header position-relative vh-50 d-flex align-items-center">
+            <div class="header-background position-absolute w-100 h-100">
+                <img src="img/pexels-asadphoto-2548562.jpg" 
+                     alt="Lodge safari en Afrique" 
+                     class="w-100 h-100 object-fit-cover">
+                <div class="header-overlay position-absolute w-100 h-100"></div>
+            </div>
+            
+            <div class="container position-relative z-index-1 text-center text-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold mb-4">Nos Services LUNATIC</h1>
+                        <p class="lead">Conseil en certification hôtelière et voyages éco-responsables</p>
                     </div>
-                    <div class="lodge-info">
-                        <h2>Lodge Safari Masai</h2>
-                        <div class="lodge-location">📍 Réserve Nationale du Masai Mara, Kenya</div>
-                        <div class="lodge-rating">⭐⭐⭐⭐⭐ (4.9/5 - 127 avis)</div>
-                        
-                        <div class="lodge-description">
-                            <p>Situé au cœur de la légendaire réserve du Masai Mara, notre lodge vous offre une expérience safari exceptionnelle dans le respect total de l'environnement et de la culture masaï.</p>
-                            
-                            <h3>🏕️ Hébergement</h3>
-                            <ul>
-                                <li>12 tentes de luxe avec vue sur la savane</li>
-                                <li>Salle de bain privée avec douche safari</li>
-                                <li>Terrasse privée pour observer la faune</li>
-                                <li>Décoration authentique avec artisanat local</li>
-                            </ul>
-
-                            <h3>🦁 Activités</h3>
-                            <ul>
-                                <li>Safaris matinaux et vespéraux en 4x4</li>
-                                <li>Visite de villages masaï authentiques</li>
-                                <li>Observation des oiseaux avec guide ornithologue</li>
-                                <li>Randonnées guidées dans la savane</li>
-                                <li>Soirées contées autour du feu de camp</li>
-                            </ul>
-
-                            <h3>🌱 Engagement Écologique</h3>
-                            <ul>
-                                <li>Énergie 100% solaire</li>
-                                <li>Gestion responsable de l'eau</li>
-                                <li>Matériaux de construction locaux</li>
-                                <li>Emploi prioritaire des communautés masaï</li>
-                            </ul>
-                        </div>
-
-                        <div class="lodge-features">
-                            <div class="feature">
-                                <span class="feature-icon">🛏️</span>
-                                <span>12 tentes</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">👥</span>
-                                <span>24 personnes max</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🍽️</span>
-                                <span>Restaurant</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🌐</span>
-                                <span>WiFi commun</span>
-                            </div>
-                        </div>
-
-                        <div class="lodge-pricing">
-                            <div class="price">À partir de <span class="price-amount">320€</span> / nuit / personne</div>
-                            <small>Pension complète, safaris inclus</small>
-                        </div>
-
-                        <a href="contact.html" class="btn-primary">Réserver</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Camp Baobab -->
-            <section id="baobab" class="lodge-detail">
-                <div class="lodge-hero reverse">
-                    <div class="lodge-info">
-                        <h2>Camp Baobab</h2>
-                        <div class="lodge-location">📍 Parc National de Tarangire, Tanzanie</div>
-                        <div class="lodge-rating">⭐⭐⭐⭐⭐ (4.8/5 - 89 avis)</div>
-                        
-                        <div class="lodge-description">
-                            <p>Niché sous les baobabs millénaires du parc de Tarangire, ce camp écologique vous connecte intimement à la nature sauvage tanzanienne, célèbre pour ses éléphants.</p>
-                            
-                            <h3>🏕️ Hébergement</h3>
-                            <ul>
-                                <li>8 tentes écologiques sous les baobabs</li>
-                                <li>Mobilier en bois local recyclé</li>
-                                <li>Observatoire astronomique naturel</li>
-                                <li>Espace détente suspendu dans les arbres</li>
-                            </ul>
-
-                            <h3>🐘 Activités</h3>
-                            <ul>
-                                <li>Observation des éléphants au point d'eau</li>
-                                <li>Safaris walking avec rangers expérimentés</li>
-                                <li>Ateliers artisanat avec artisans locaux</li>
-                                <li>Photographie animalière guidée</li>
-                                <li>Cuisine traditionnelle tanzanienne</li>
-                            </ul>
-
-                            <h3>🌱 Engagement Écologique</h3>
-                            <ul>
-                                <li>Construction en matériaux 100% naturels</li>
-                                <li>Récupération et filtration eau de pluie</li>
-                                <li>Compostage intégral des déchets</li>
-                                <li>Partenariat avec conservatoire local</li>
-                            </ul>
-                        </div>
-
-                        <div class="lodge-features">
-                            <div class="feature">
-                                <span class="feature-icon">🏕️</span>
-                                <span>8 tentes</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">👥</span>
-                                <span>16 personnes max</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🍽️</span>
-                                <span>Cuisine communautaire</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🔋</span>
-                                <span>Énergie solaire</span>
-                            </div>
-                        </div>
-
-                        <div class="lodge-pricing">
-                            <div class="price">À partir de <span class="price-amount">280€</span> / nuit / personne</div>
-                            <small>Pension complète, activités incluses</small>
-                        </div>
-
-                        <a href="contact.html" class="btn-primary">Réserver</a>
-                    </div>
-                    <div class="lodge-image-gallery">
-                        <div class="main-image">
-                            <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop" alt="Camp Baobab - Vue principale">
-                        </div>
-                        <div class="thumbnail-gallery">
-                            <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Éléphants Tarangire">
-                            <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Baobabs">
-                            <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Artisanat local">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Lodge Rivière Zambèze -->
-            <section id="zambeze" class="lodge-detail">
-                <div class="lodge-hero">
-                    <div class="lodge-image-gallery">
-                        <div class="main-image">
-                            <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=1200&h=800&fit=crop" alt="Lodge Rivière Zambèze - Vue principale">
-                        </div>
-                        <div class="thumbnail-gallery">
-                            <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Rivière Zambèze">
-                            <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Faune aquatique">
-                            <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&fit=crop" alt="Lodge luxe">
-                        </div>
-                    </div>
-                    <div class="lodge-info">
-                        <h2>Lodge Rivière Zambèze</h2>
-                        <div class="lodge-location">📍 Bords du Zambèze, Zambie</div>
-                        <div class="lodge-rating">⭐⭐⭐⭐⭐ (4.9/5 - 156 avis)</div>
-                        
-                        <div class="lodge-description">
-                            <p>Surplombant le majestueux fleuve Zambèze, ce lodge de luxe écologique offre une expérience unique alliant confort raffiné et immersion totale dans la nature africaine.</p>
-                            
-                            <h3>🏨 Hébergement</h3>
-                            <ul>
-                                <li>15 suites panoramiques sur pilotis</li>
-                                <li>Terrasses privées face au fleuve</li>
-                                <li>Spa naturel avec soins traditionnels</li>
-                                <li>Piscine à débordement naturelle</li>
-                            </ul>
-
-                            <h3>🚤 Activités</h3>
-                            <ul>
-                                <li>Croisières sunset sur le Zambèze</li>
-                                <li>Pêche sportive au tigre fish</li>
-                                <li>Safaris en mokoro (pirogue traditionnelle)</li>
-                                <li>Excursions aux chutes Victoria</li>
-                                <li>Observation des hippopatames et crocodiles</li>
-                            </ul>
-
-                            <h3>🌱 Engagement Écologique</h3>
-                            <ul>
-                                <li>Architecture sur pilotis préservant l'écosystème</li>
-                                <li>Station d'épuration naturelle</li>
-                                <li>Potager biologique pour le restaurant</li>
-                                <li>Programme de reboisement riverain</li>
-                            </ul>
-                        </div>
-
-                        <div class="lodge-features">
-                            <div class="feature">
-                                <span class="feature-icon">🏨</span>
-                                <span>15 suites</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">👥</span>
-                                <span>30 personnes max</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🍽️</span>
-                                <span>Restaurant gastronomique</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🏊</span>
-                                <span>Piscine & Spa</span>
-                            </div>
-                        </div>
-
-                        <div class="lodge-pricing">
-                            <div class="price">À partir de <span class="price-amount">450€</span> / nuit / personne</div>
-                            <small>Suite panoramique, pension complète</small>
-                        </div>
-
-                        <a href="contact.html" class="btn-primary">Réserver</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Map Section -->
-            <section class="map-section">
-                <h2 class="section-title">Localisation de nos Lodges</h2>
-                <div class="map-container">
-                    <div class="map-placeholder">
-                        <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop" alt="Carte Afrique - Localisation des lodges">
-                        <div class="map-overlay">
-                            <h3>🗺️ Carte Interactive</h3>
-                            <p>Explorez la localisation de nos 7 lodges et camps répartis dans 4 pays d'Afrique de l'Est</p>
-                            <button class="btn-secondary">Voir la carte complète</button>
-                        </div>
-                    </div>
-                    <div class="map-legend">
-                        <div class="legend-item">
-                            <span class="legend-dot kenya"></span>
-                            <span>Kenya - Lodge Safari Masai</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-dot tanzania"></span>
-                            <span>Tanzanie - Camp Baobab</span>
-                        </div>
-                        <div class="legend-item">
-                            <span class="legend-dot zambia"></span>
-                            <span>Zambie - Lodge Zambèze</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-background">
-            <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop" alt="Safari en Afrique">
-        </div>
-        <div class="cta-overlay"></div>
-        <div class="cta-content">
-            <h2>Prêt pour l'Aventure ?</h2>
-            <p>Contactez-nous pour personnaliser votre séjour et vivre une expérience inoubliable</p>
-            <a href="contact.html" class="cta-button">Demander un Devis</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Kany Lodges & Camps</h3>
-                    <p>Votre partenaire pour un écotourisme authentique en Afrique depuis 2008.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="lodges.html">Nos Lodges</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>📧 info@kanylodges.com</p>
-                    <p>📞 +33 1 23 45 67 89</p>
-                    <p>📍 Paris, France</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Kany Lodges & Camps. Tous droits réservés.</p>
+        </section>
+
+        <!-- Services de Certification Hôtelière -->
+        <section id="certification" class="py-5 section-gray">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-primary mb-3">Certification Hôtelière</h2>
+                        <p class="lead text-muted mb-4">Labels internationaux pour un tourisme durable et responsable</p>
+                        
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-primary mb-3">
+                                            <i class="fas fa-certificate me-2"></i>Labels Proposés
+                                        </h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Green Key (60+ pays)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Green Globe (80+ pays)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Travelife (global)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>EarthCheck (65+ pays)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Biosphere Tourism
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-primary mb-3">
+                                            <i class="fas fa-cogs me-2"></i>Processus
+                                        </h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Diagnostic initial (1-2 jours)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Préparation certification (3-5 jours)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Suivi & assistance audit (1 mois)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Pack complet (4-6 semaines)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarifs et CTA -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card border-0 shadow-lg">
+                                    <div class="card-body p-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4 col-md-6 text-center text-lg-start mb-3 mb-lg-0">
+                                                <h4 class="fw-bold text-primary mb-2">À partir de <strong>300 USD</strong></h4>
+                                                <small class="text-muted">pour le diagnostic initial</small>
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 text-center text-lg-end">
+                                                <a href="contact.html" class="btn btn-primary btn-lg rounded-pill me-3 mb-2">
+                                                    <i class="fas fa-calendar-check me-2"></i>Demander un devis
+                                                </a>
+                                                <a href="contact.html" class="btn btn-outline-primary btn-lg rounded-pill mb-2">
+                                                    <i class="fas fa-info-circle me-2"></i>Plus d'informations
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services de Voyage LUNATIC -->
+        <section id="voyages" class="py-5 section-white">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-primary mb-3">Voyages Éco-responsables</h2>
+                        <p class="lead text-muted mb-4">Packs LUNATIC pour des escapades sans visa et des séjours durables</p>
+                        
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-white h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-primary mb-3">
+                                            <i class="fas fa-plane me-2"></i>Nos Packs
+                                        </h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>LUNATIC Light (1 personne)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>LUNATIC Leap (2 personnes)
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>LUNATIC Legacy (3 personnes)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-white h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-primary mb-3">
+                                            <i class="fas fa-leaf me-2"></i>Caractéristiques
+                                        </h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Escapades sans visa
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Séjours écoresponsables
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Tourisme durable
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Liberté de voyage
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Tarifs et CTA -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card border-0 shadow-lg">
+                                    <div class="card-body p-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4 col-md-6 text-center text-lg-start mb-3 mb-lg-0">
+                                                <h4 class="fw-bold text-primary mb-2">À partir de <strong>1,653 USD</strong></h4>
+                                                <small class="text-muted">pour le pack LUNATIC Light</small>
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 text-center text-lg-end">
+                                                <a href="contact.html" class="btn btn-primary btn-lg rounded-pill me-3 mb-2">
+                                                    <i class="fas fa-calendar-check me-2"></i>Demander un devis
+                                                </a>
+                                                <a href="contact.html" class="btn btn-outline-primary btn-lg rounded-pill mb-2">
+                                                    <i class="fas fa-info-circle me-2"></i>Plus d'informations
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lodge Rivière Zambèze -->
+        <section id="zambeze" class="py-5 section-light-gray">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <h2 class="display-5 fw-bold text-primary mb-3">Lodge Rivière Zambèze</h2>
+                        <p class="lead text-muted mb-4">Au bord du fleuve mythique Zambèze, Zambie.</p>
+                        
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-primary mb-3">
+                                            <i class="fas fa-water me-2"></i>Hébergement
+                                        </h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>15 suites de luxe
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Piscine privée
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Spa et centre de bien-être
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="card border-0 bg-light h-100">
+                                    <div class="card-body p-4">
+                                        <h5 class="card-title fw-bold text-primary mb-3">
+                                            <i class="fas fa-fish me-2"></i>Activités
+                                        </h5>
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Croisières sur le Zambèze
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Pêche au tigre
+                                            </li>
+                                            <li class="mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>Vols en hélicoptère
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Prix et CTA en pleine largeur -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card border-0 shadow-lg">
+                                    <div class="card-body p-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-4 col-md-6 text-center text-lg-start mb-3 mb-lg-0">
+                                                <h4 class="fw-bold text-primary mb-2">À partir de <strong>€3,200</strong></h4>
+                                                <small class="text-muted">par personne pour 3 nuits</small>
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 text-center text-lg-end">
+                                                <a href="contact.html" class="btn btn-primary btn-lg rounded-pill me-3 mb-2">
+                                                    <i class="fas fa-calendar-check me-2"></i>Réserver maintenant
+                                                </a>
+                                                <a href="contact.html" class="btn btn-outline-primary btn-lg rounded-pill mb-2">
+                                                    <i class="fas fa-info-circle me-2"></i>Demander plus d'infos
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section position-relative py-5 text-white">
+            <div class="cta-background position-absolute top-0 start-0 w-100 h-100">
+                <img src="img/pexels-asadphoto-3320508.jpg" 
+                     alt="Éléphants dans la savane" 
+                     class="w-100 h-100 object-fit-cover">
+                <div class="cta-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+            </div>
+            
+            <div class="container position-relative text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-4 fw-bold mb-4 text-white">Prêt pour l'Aventure ?</h2>
+                        <p class="lead mb-5 text-white">Contactez-nous dès maintenant pour planifier vos services LUNATIC.</p>
+                        <a href="contact.html" class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold">
+                            <i class="fas fa-paper-plane me-2"></i>Nous Contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-star me-2 text-primary"></i>LUNATIC
+                    </h5>
+                    <p class="text-light">Votre partenaire pour une liberté de voyage hors de ce monde avec responsabilité environnementale.</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">À Propos</a></li>
+                        <li class="mb-2"><a href="lodges.html" class="text-light text-decoration-none">Nos Services</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light text-decoration-none">Galerie</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2 text-primary"></i>joycesabwe@gmail.com
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2 text-primary"></i>+243 825 312 001
+                    </p>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Votre email">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 LUNATIC Hospitality. Tous droits réservés.</p>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Social Media Icons -->
-    <div class="social-float">
-        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-        </a>
-        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-        </a>
-        <a href="https://wa.me/33123456789" target="_blank" class="social-icon whatsapp">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488"/>
-            </svg>
-        </a>
-    </div>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
 </html>

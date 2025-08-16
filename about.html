@@ -3,230 +3,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À Propos - Kany Lodges & Camps | Notre Mission Écotourisme</title>
-    <meta name="description" content="Découvrez l'histoire et la mission de Kany Lodges & Camps. 15 ans d'expérience en écotourisme responsable et durable en Afrique.">
-    <meta name="keywords" content="écotourisme responsable, mission tourisme durable, histoire Kany Lodges, valeurs environnementales Afrique">
+    <title>À Propos - LUNATIC Hospitality | Notre Mission</title>
+    <meta name="description" content="Découvrez l'histoire et la mission de LUNATIC Hospitality. Marque premium de conseil et de voyage éco-responsable pour une liberté hors de ce monde.">
+    <meta name="keywords" content="LUNATIC Hospitality, conseil voyage, certification hôtelière, tourisme durable, liberté de voyage, Afrique">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Kany Lodges & Camps</h2>
+    <!-- Header -->
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
+                    <div class="brand-icon me-3">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span class="brand-text">LUNATIC</span>
+                </a>
+                
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="index.html">
+                                <span>Accueil</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative" href="about.html">
+                                <span>À Propos</span>
+                                <div class="nav-link-underline active"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="lodges.html">
+                                <span>Nos Services</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="gallery.html">
+                                <span>Galerie</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="contact.html">
+                                <span>Contact</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link active">À Propos</a></li>
-                <li class="nav-item"><a href="lodges.html" class="nav-link">Nos Lodges</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Galerie</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="header-image">
-            <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&fit=crop" alt="Village traditionnel africain">
-        </div>
-        <div class="header-overlay"></div>
-        <div class="header-content">
-            <h1>Notre Histoire</h1>
-            <p>15 ans d'engagement pour un tourisme responsable en Afrique</p>
-        </div>
-    </section>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="container">
-            <!-- Mission Section -->
-            <section class="content-section">
-                <div class="content-grid reverse">
-                    <div class="text-content">
-                        <h2>Notre Mission</h2>
-                        <p>Depuis 2008, Kany Lodges & Camps s'engage à offrir des expériences de voyage authentiques qui respectent l'environnement et soutiennent les communautés locales africaines.</p>
-                        <p>Nous croyons fermement que le tourisme peut être une force positive pour la conservation de la nature et le développement économique des régions que nous visitons.</p>
-                        <div class="highlight-box">
-                            <h3>🌍 Notre Impact</h3>
-                            <ul>
-                                <li>Plus de 10 000 voyageurs sensibilisés à l'écotourisme</li>
-                                <li>Soutien direct à 15 communautés locales</li>
-                                <li>Participation à 8 projets de conservation</li>
-                                <li>100% d'énergie renouvelable dans nos lodges</li>
-                            </ul>
-                        </div>
+        <!-- Page Header -->
+        <section class="page-header position-relative vh-50 d-flex align-items-center">
+            <div class="header-background position-absolute w-100 h-100">
+                <img src="img/pexels-asadphoto-1449767.jpg" 
+                     alt="Village traditionnel africain" 
+                     class="w-100 h-100 object-fit-cover">
+                <div class="header-overlay position-absolute w-100 h-100"></div>
+            </div>
+            
+            <div class="container position-relative z-index-1 text-center text-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold mb-4">Notre Histoire</h1>
+                        <p class="lead">LUNATIC Hospitality - Une liberté hors de ce monde</p>
                     </div>
-                    <div class="image-content">
-                        <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Communauté locale africaine">
-                    </div>
-                </div>
-            </section>
-
-            <!-- Values Section -->
-            <section class="values-section">
-                <h2 class="section-title">Nos Valeurs</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <div class="value-icon">🌱</div>
-                        <h3>Durabilité</h3>
-                        <p>Tous nos lodges sont conçus avec des matériaux locaux et des technologies respectueuses de l'environnement.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🤝</div>
-                        <h3>Communauté</h3>
-                        <p>Nous collaborons étroitement avec les communautés locales, créant des emplois et valorisant leur culture.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">🦁</div>
-                        <h3>Conservation</h3>
-                        <p>Une partie de nos revenus est directement reversée aux programmes de protection de la faune africaine.</p>
-                    </div>
-                    <div class="value-card">
-                        <div class="value-icon">✨</div>
-                        <h3>Authenticité</h3>
-                        <p>Chaque expérience est conçue pour vous connecter genuinement à la culture et à la nature africaine.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Team Section -->
-            <section class="team-section">
-                <h2 class="section-title">Notre Équipe</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="Aminata Kone, Fondatrice">
-                        </div>
-                        <div class="member-info">
-                            <h3>Aminata Koné</h3>
-                            <p class="member-role">Fondatrice & Directrice</p>
-                            <p>Passionnée par l'Afrique depuis l'enfance, Aminata a créé Kany Lodges pour partager sa vision d'un tourisme respectueux et enrichissant.</p>
-                        </div>
-                    </div>
-                    <div class="team-member">
-                        <div class="member-image">
-                            <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&fit=crop" alt="David Mensah, Guide Expert">
-                        </div>
-                        <div class="member-info">
-                            <h3>David Mensah</h3>
-                            <p class="member-role">Guide Expert & Conservation</p>
-                            <p>Biologiste de formation, David accompagne nos voyageurs depuis 12 ans et supervise nos projets de conservation.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Story Section -->
-            <section class="story-section">
-                <div class="story-content">
-                    <h2>Notre Histoire</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-year">2008</div>
-                            <div class="timeline-content">
-                                <h3>Les Débuts</h3>
-                                <p>Création de Kany Lodges avec notre premier camp au Kenya, dans le respect total de l'environnement masaï.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2012</div>
-                            <div class="timeline-content">
-                                <h3>Expansion</h3>
-                                <p>Ouverture de deux nouveaux lodges en Tanzanie et lancement de nos premiers programmes de conservation.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2018</div>
-                            <div class="timeline-content">
-                                <h3>Reconnaissance</h3>
-                                <p>Prix du Tourisme Durable décerné par l'Organisation Mondiale du Tourisme pour notre engagement.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-year">2024</div>
-                            <div class="timeline-content">
-                                <h3>Aujourd'hui</h3>
-                                <p>7 lodges et camps répartis dans 4 pays, une équipe de 45 personnes locales et des milliers de voyageurs conquis.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-background">
-            <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop" alt="Coucher de soleil sur la savane">
-        </div>
-        <div class="cta-overlay"></div>
-        <div class="cta-content">
-            <h2>Rejoignez Notre Mission</h2>
-            <p>Découvrez comment voyager peut contribuer à un monde meilleur</p>
-            <a href="lodges.html" class="cta-button">Voir nos Lodges</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Kany Lodges & Camps</h3>
-                    <p>Votre partenaire pour un écotourisme authentique en Afrique depuis 2008.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="lodges.html">Nos Lodges</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>📧 info@kanylodges.com</p>
-                    <p>📞 +33 1 23 45 67 89</p>
-                    <p>📍 Paris, France</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Kany Lodges & Camps. Tous droits réservés.</p>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="py-5 section-gray">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="pe-lg-5">
+                            <h2 class="display-5 fw-bold text-primary mb-4">Notre Mission</h2>
+                            <p class="lead text-muted mb-4">LUNATIC Hospitality s'engage à donner aux Congolais le pouvoir d'explorer le monde simplement, avec responsabilité environnementale.</p>
+                            <p class="text-muted mb-4">Nous croyons fermement que le voyage peut être une force positive pour la durabilité et le développement économique, tout en préservant notre liberté d'exploration.</p>
+                            
+                            <div class="card border-0 bg-light p-4 rounded-4">
+                                <h3 class="h5 fw-bold text-primary mb-3">
+                                    <i class="fas fa-star me-2"></i>Notre Vision
+                                </h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Devenir la marque de voyage et durabilité la plus inspirante d'Afrique
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Certification hôtelière internationale (Green Key, Green Globe, Travelife)
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Voyages éco-responsables sans limites
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check-circle text-success me-2"></i>Liberté de voyage selon vos propres règles
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                                                         <img src="img/pexels-asadphoto-1268855.jpg" 
+                                  alt="Communauté locale africaine" 
+                                  class="img-fluid rounded-4 shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="py-5 section-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary mb-3">Nos Valeurs</h2>
+                    <p class="lead text-muted">Ce qui nous distingue dans le voyage et la durabilité</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 hover-lift">
+                            <div class="card-body">
+                                <div class="value-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-leaf fa-2x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-primary mb-3">Liberté</h5>
+                                <p class="card-text text-muted">Une liberté hors de ce monde pour explorer le globe selon vos propres règles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 hover-lift">
+                            <div class="card-body">
+                                <div class="value-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-user-tie fa-2x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-primary mb-3">Responsabilité</h5>
+                                <p class="card-text text-muted">Engagement environnemental et social pour un tourisme durable et éthique.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 hover-lift">
+                            <div class="card-body">
+                                <div class="value-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-heart fa-2x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-primary mb-3">Excellence</h5>
+                                <p class="card-text text-muted">Standards internationaux pour la certification hôtelière et les voyages premium.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4 hover-lift">
+                            <div class="card-body">
+                                <div class="value-icon bg-primary bg-gradient text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-shield-alt fa-2x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-primary mb-3">Paiement Sécurisé</h5>
+                                <p class="card-text text-muted">Vos réservations sont protégées par des systèmes de paiement sécurisés et fiables.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="py-5 section-blue-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="position-relative">
+                                                         <img src="img/pexels-gerardomenmar-16845251.jpg" 
+                                  alt="Safari en Afrique" 
+                                  class="img-fluid rounded-4 shadow-lg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ps-lg-5">
+                            <h2 class="display-5 fw-bold text-primary mb-4">Notre Histoire</h2>
+                            <p class="lead text-muted mb-4">Tout a commencé en 2008 avec une vision simple : créer des expériences de voyage qui respectent l'Afrique et ses habitants.</p>
+                            <p class="text-muted mb-4">Aujourd'hui, nous sommes fiers d'avoir contribué à la préservation de la biodiversité africaine tout en créant des emplois locaux durables.</p>
+                            
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <div class="text-center p-3 bg-light rounded-3">
+                                        <h4 class="fw-bold text-primary mb-1">15+</h4>
+                                        <small class="text-muted">Années d'expérience</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-center p-3 bg-light rounded-3">
+                                        <h4 class="fw-bold text-primary mb-1">50+</h4>
+                                        <small class="text-muted">Employés locaux</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-5 section-light-gray">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary mb-3">Notre Équipe</h2>
+                    <p class="lead text-muted">Des passionnés dédiés à votre expérience africaine</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm text-center hover-lift">
+                            <div class="card-body p-4">
+                                <div class="rounded-circle bg-primary bg-gradient text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 100px; height: 100px;">
+                                    <i class="fas fa-user fa-3x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-primary mb-2">Jean Dupont</h5>
+                                <p class="text-muted mb-3">Fondateur & Directeur</p>
+                                <p class="card-text text-muted">Passionné d'Afrique depuis plus de 20 ans, Jean a créé Kani Lodge pour partager sa passion du continent.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm text-center hover-lift">
+                            <div class="card-body p-4">
+                                <div class="rounded-circle bg-primary bg-gradient text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 100px; height: 100px;">
+                                    <i class="fas fa-user fa-3x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-primary mb-2">Marie Martin</h5>
+                                <p class="text-muted mb-3">Responsable Écotourisme</p>
+                                <p class="card-text text-muted">Spécialiste en développement durable, Marie veille à ce que nos activités respectent l'environnement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-0 shadow-sm text-center hover-lift">
+                            <div class="card-body p-4">
+                                <div class="rounded-circle bg-primary bg-gradient text-white d-inline-flex align-items-center justify-content-center mb-3" style="width: 100px; height: 100px;">
+                                    <i class="fas fa-user fa-3x"></i>
+                                </div>
+                                <h5 class="card-title fw-bold text-primary mb-2">Pierre Dubois</h5>
+                                <p class="text-muted mb-3">Chef des Opérations</p>
+                                <p class="card-text text-muted">Pierre supervise toutes nos opérations sur le terrain pour garantir votre sécurité et votre confort.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-star me-2 text-primary"></i>LUNATIC
+                    </h5>
+                    <p class="text-light">Votre partenaire pour une liberté de voyage hors de ce monde avec responsabilité environnementale.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm me-2">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/33123456789" target="_blank" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">À Propos</a></li>
+                        <li class="mb-2"><a href="lodges.html" class="text-light text-decoration-none">Nos Services</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light text-decoration-none">Galerie</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2 text-primary"></i>joycesabwe@gmail.com
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2 text-primary"></i>+243 825 312 001
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-map-marker-alt me-2 text-primary"></i>Kinshasa, RDC
+                    </p>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-light mb-3">Restez informé de nos dernières offres</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Votre email">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 LUNATIC Hospitality. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Mentions légales</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Politique de confidentialité</a>
+                    <a href="#" class="text-light text-decoration-none">CGV</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Social Media Icons -->
-    <div class="social-float">
-        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-        </a>
-        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-        </a>
-        <a href="https://wa.me/33123456789" target="_blank" class="social-icon whatsapp">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488"/>
-            </svg>
-        </a>
-    </div>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,251 +3,394 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie - Kany Lodges & Camps | Photos & Vidéos Écotourisme Afrique</title>
-    <meta name="description" content="Découvrez notre galerie photos et vidéos : safaris, lodges, faune africaine, paysages. Vivez l'expérience Kany Lodges en images.">
-    <meta name="keywords" content="galerie photos Afrique, vidéos safari, faune africaine, lodges écologiques, paysages savane, écotourisme images">
+    <title>Galerie - LUNATIC Hospitality | Photos & Vidéos</title>
+    <meta name="description" content="Découvrez notre galerie photos et vidéos : voyages éco-responsables, conseil hôtelier, destinations durables. Vivez l'expérience LUNATIC en images.">
+    <meta name="keywords" content="galerie photos voyages, vidéos destinations, conseil hôtelier, tourisme durable, éco-responsable, LUNATIC Hospitality">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
+    <header class="header">
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Kany Lodges & Camps</h2>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
+                    <div class="brand-icon me-3">
+                        <i class="fas fa-star"></i>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">À Propos</a></li>
-                <li class="nav-item"><a href="lodges.html" class="nav-link">Nos Lodges</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link active">Galerie</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <span class="brand-text">LUNATIC</span>
+                </a>
+                
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="index.html">
+                                <span>Accueil</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="about.html">
+                                <span>À Propos</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="lodges.html">
+                                <span>Nos Services</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative" href="gallery.html">
+                                <span>Galerie</span>
+                                <div class="nav-link-underline active"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="contact.html">
+                                <span>Contact</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
             </div>
         </div>
     </nav>
+    </header>
 
+    <!-- Main Content -->
+    <main class="main-content">
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="header-image">
-            <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1920&h=600&fit=crop" alt="Galerie safari Afrique">
+        <section class="page-header position-relative vh-50 d-flex align-items-center">
+            <div class="header-background position-absolute w-100 h-100">
+                <img src="img/pexels-asadphoto-3155639.jpg" 
+                     alt="Galerie safari Afrique" 
+                     class="w-100 h-100 object-fit-cover">
+                <div class="header-overlay position-absolute w-100 h-100"></div>
+            </div>
+            
+            <div class="container position-relative z-index-1 text-center text-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold mb-4">Galerie LUNATIC</h1>
+                        <p class="lead">Out of This World Freedom - Découvrez nos expériences de voyage éco-responsable</p>
+                    </div>
         </div>
-        <div class="header-overlay"></div>
-        <div class="header-content">
-            <h1>Galerie</h1>
-            <p>L'Afrique authentique en images et vidéos</p>
         </div>
     </section>
 
-    <!-- Gallery Filter -->
-    <section class="gallery-filter">
+            <!-- Gallery Filter -->
+        <section class="py-5 section-gray">
         <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">Tout</button>
-                <button class="filter-btn" data-filter="lodges">Lodges</button>
-                <button class="filter-btn" data-filter="wildlife">Faune</button>
-                <button class="filter-btn" data-filter="landscapes">Paysages</button>
-                <button class="filter-btn" data-filter="activities">Activités</button>
-                <button class="filter-btn" data-filter="videos">Vidéos</button>
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary mb-3">Découvrez nos Expériences LUNATIC</h2>
+                    <p class="lead text-muted">Filtrez par catégorie pour explorer nos services de certification hôtelière et voyages éco-responsables</p>
+                </div>
+                
+                <div class="d-flex flex-wrap justify-content-center gap-2 mb-5">
+                    <button class="btn btn-outline-primary rounded-pill px-4 py-2 filter-btn active" data-filter="all">
+                        <i class="fas fa-th me-2"></i>Tout
+                    </button>
+                    <button class="btn btn-outline-primary rounded-pill px-4 py-2 filter-btn" data-filter="lodges">
+                        <i class="fas fa-certificate me-2"></i>Certification
+                    </button>
+                    <button class="btn btn-outline-primary rounded-pill px-4 py-2 filter-btn" data-filter="wildlife">
+                        <i class="fas fa-leaf me-2"></i>Éco-responsable
+                    </button>
+                    <button class="btn btn-outline-primary rounded-pill px-4 py-2 filter-btn" data-filter="landscapes">
+                        <i class="fas fa-globe me-2"></i>Destinations
+                    </button>
+                    <button class="btn btn-outline-primary rounded-pill px-4 py-2 filter-btn" data-filter="activities">
+                        <i class="fas fa-plane me-2"></i>Voyages
+                    </button>
+                    <button class="btn btn-outline-primary rounded-pill px-4 py-2 filter-btn" data-filter="videos">
+                        <i class="fas fa-video me-2"></i>Vidéos
+                    </button>
             </div>
         </div>
     </section>
 
     <!-- Gallery Grid -->
-    <section class="gallery-grid">
+        <section class="pb-5">
         <div class="container">
-            <div class="gallery-masonry">
-                <!-- Lodges -->
-                <div class="gallery-item" data-category="lodges">
-                    <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Lodge Safari Masai - Tente de luxe" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Lodge Safari Masai</h3>
-                        <p>Tente de luxe avec vue sur la savane</p>
+                <div class="row g-4" id="gallery-grid">
+                <!-- Certification Hôtelière -->
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="lodges">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-2548562.jpg" 
+                                     alt="Green Key - Certification environnementale" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">Green Key</h5>
+                                        <p class="mb-0">Certification environnementale (60+ pays)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">Green Key</h6>
+                                <p class="card-text text-muted small">Gestion environnementale pour hôtels durables</p>
+                            </div>
                     </div>
                 </div>
 
-                <div class="gallery-item" data-category="lodges">
-                    <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Camp Baobab - Hébergement écologique" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Camp Baobab</h3>
-                        <p>Hébergement écologique sous les baobabs</p>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="lodges">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-29376095.jpg" 
+                                     alt="Green Globe - Impact culturel et social" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">Green Globe</h5>
+                                        <p class="mb-0">Impact culturel et social (80+ pays)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">Green Globe</h6>
+                                <p class="card-text text-muted small">Certification pour impact culturel et social</p>
+                            </div>
                     </div>
                 </div>
 
-                <!-- Wildlife -->
-                <div class="gallery-item" data-category="wildlife">
-                    <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Éléphants dans la savane" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Éléphants d'Afrique</h3>
-                        <p>Famille d'éléphants au coucher du soleil</p>
+                <!-- Éco-responsable -->
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="wildlife">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-13291079.jpg" 
+                                     alt="Travelife - Droits humains et engagement communautaire" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">Travelife</h5>
+                                        <p class="mb-0">Droits humains et engagement communautaire</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">Travelife</h6>
+                                <p class="card-text text-muted small">Certification globale pour tourisme responsable</p>
+                            </div>
                     </div>
                 </div>
 
-                <div class="gallery-item" data-category="wildlife">
-                    <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" alt="Lions dans le Masai Mara" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Lions du Masai Mara</h3>
-                        <p>Roi de la savane dans son habitat naturel</p>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="wildlife">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-3155648.jpg" 
+                                     alt="EarthCheck - Suivi scientifique" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">EarthCheck</h5>
+                                        <p class="mb-0">Suivi scientifique et performance environnementale</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">EarthCheck</h6>
+                                <p class="card-text text-muted small">Certification basée sur la science (65+ pays)</p>
+                            </div>
                     </div>
                 </div>
 
-                <!-- Landscapes -->
-                <div class="gallery-item" data-category="landscapes">
-                    <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Coucher de soleil savane africaine" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Savane au Crépuscule</h3>
-                        <p>Magie des couchers de soleil africains</p>
+                                <!-- Destinations -->
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="landscapes">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-2245203.jpg" 
+                                     alt="Biosphere Tourism - Aligné avec les ODD" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">Biosphere Tourism</h5>
+                                        <p class="mb-0">Aligné avec les Objectifs de Développement Durable</p>
+                                    </div>
+                </div>
+                </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">Biosphere Tourism</h6>
+                                <p class="card-text text-muted small">Certification pour développement durable</p>
+                            </div>
                     </div>
                 </div>
 
-                <div class="gallery-item" data-category="landscapes">
-                    <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Baobabs millénaires" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Baobabs Millénaires</h3>
-                        <p>Arbres légendaires du continent africain</p>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="landscapes">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-12720677.jpg" 
+                                     alt="EcoLabel EU - Normes strictes européennes" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">EcoLabel EU</h5>
+                                        <p class="mb-0">Normes strictes européennes, rare en Afrique</p>
+                    </div>
+                </div>
+                </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">EcoLabel EU</h6>
+                                <p class="card-text text-muted small">Certification européenne de haute qualité</p>
+                            </div>
                     </div>
                 </div>
 
-                <!-- Activities -->
-                <div class="gallery-item" data-category="activities">
-                    <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Safari en 4x4" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Safari 4x4</h3>
-                        <p>Exploration de la faune en véhicule tout-terrain</p>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="landscapes">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-1449767.jpg" 
+                                     alt="Baobabs millénaires" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">Baobabs Millénaires</h5>
+                                        <p class="mb-0">Arbres majestueux de la savane africaine</p>
+                                    </div>
+                    </div>
+                </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">Baobabs Millénaires</h6>
+                                <p class="card-text text-muted small">Arbres majestueux de la savane africaine</p>
+                            </div>
                     </div>
                 </div>
 
-                <div class="gallery-item" data-category="activities">
-                    <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" alt="Visite village masaï" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Village Masaï</h3>
-                        <p>Rencontre avec les communautés locales</p>
+                    <!-- Voyages LUNATIC -->
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="activities">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-3155639.jpg" 
+                                     alt="LUNATIC Light - Pack 1 personne" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">LUNATIC Light</h5>
+                                        <p class="mb-0">Pack voyage pour 1 personne - 1,653 USD</p>
+                    </div>
+                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">LUNATIC Light</h6>
+                                <p class="card-text text-muted small">Escapades sans visa pour voyageur solo</p>
+                    </div>
                     </div>
                 </div>
 
-                <!-- More Wildlife -->
-                <div class="gallery-item" data-category="wildlife">
-                    <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Girafe dans la savane" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Girafe Masaï</h3>
-                        <p>Élégance africaine en liberté</p>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="activities">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-2549018.jpg" 
+                                     alt="LUNATIC Leap - Pack 2 personnes" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">LUNATIC Leap</h5>
+                                        <p class="mb-0">Pack voyage pour 2 personnes - 3,015 USD</p>
+                    </div>
+                </div>
+                            </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">LUNATIC Leap</h6>
+                                <p class="card-text text-muted small">Séjours éco-responsables pour couples</p>
+                    </div>
                     </div>
                 </div>
 
-                <!-- Videos -->
-                <div class="gallery-item video" data-category="videos">
-                    <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Vidéo safari Masai Mara" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="video-play-button">▶️</div>
-                        <h3>Safari Masai Mara</h3>
-                        <p>Plongez au cœur de l'action safari</p>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="activities">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-1268855.jpg" 
+                                     alt="LUNATIC Legacy - Pack 3 personnes" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <h5 class="fw-bold mb-2">LUNATIC Legacy</h5>
+                                        <p class="mb-0">Pack voyage pour 3 personnes - 4,325 USD</p>
+                    </div>
+                </div>
+                    </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">LUNATIC Legacy</h6>
+                                <p class="card-text text-muted small">Voyages familiaux et investissements éco</p>
+                    </div>
                     </div>
                 </div>
 
-                <div class="gallery-item video" data-category="videos">
-                    <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Vidéo Camp Baobab" loading="lazy">
-                    <div class="gallery-overlay">
-                        <div class="video-play-button">▶️</div>
-                        <h3>Vie au Camp Baobab</h3>
-                        <p>Une journée typique dans notre camp écologique</p>
-                    </div>
-                </div>
-
-                <!-- More Lodges -->
-                <div class="gallery-item" data-category="lodges">
-                    <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=600&h=600&fit=crop" alt="Lodge Zambèze - Suite panoramique" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Lodge Zambèze</h3>
-                        <p>Suite panoramique face au fleuve</p>
-                    </div>
-                </div>
-
-                <!-- More Landscapes -->
-                <div class="gallery-item" data-category="landscapes">
-                    <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Rivière Zambèze" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Fleuve Zambèze</h3>
-                        <p>Majestueuse artère de l'Afrique australe</p>
-                    </div>
-                </div>
-
-                <!-- More Activities -->
-                <div class="gallery-item" data-category="activities">
-                    <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Artisanat local" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Artisanat Local</h3>
-                        <p>Découverte des savoir-faire traditionnels</p>
-                    </div>
-                </div>
-
-                <!-- More Wildlife -->
-                <div class="gallery-item" data-category="wildlife">
-                    <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Hippopotames Zambèze" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Hippopotames</h3>
-                        <p>Géants aquatiques du Zambèze</p>
-                    </div>
-                </div>
-
-                <div class="gallery-item" data-category="wildlife">
-                    <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Zèbres migration" loading="lazy">
-                    <div class="gallery-overlay">
-                        <h3>Grande Migration</h3>
-                        <p>Spectacle naturel extraordinaire</p>
+                    <!-- Videos -->
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="videos">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-keeganjchecks-14524375.jpg" 
+                                     alt="Vidéo safari" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <i class="fas fa-play-circle fa-3x mb-3"></i>
+                                        <h5 class="fw-bold mb-2">Safari Vidéo</h5>
+                                        <p class="mb-0">Regardez nos safaris en action</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-        <div class="lightbox-content">
-            <span class="lightbox-close">&times;</span>
-            <img class="lightbox-image" src="" alt="">
-            <div class="lightbox-info">
-                <h3 class="lightbox-title"></h3>
-                <p class="lightbox-description"></p>
-            </div>
-            <div class="lightbox-nav">
-                <button class="lightbox-prev">❮</button>
-                <button class="lightbox-next">❯</button>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">Safari Vidéo</h6>
+                                <p class="card-text text-muted small">Regardez nos safaris en action</p>
             </div>
         </div>
     </div>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials-section">
-        <div class="container">
-            <h2 class="section-title">Témoignages de nos Voyageurs</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Une expérience inoubliable ! Le Lodge Safari Masai nous a permis de vivre l'Afrique authentique tout en respectant l'environnement. Les guides locaux sont exceptionnels."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Marie Dubois">
-                        <div>
-                            <h4>Marie Dubois</h4>
-                            <span>Photographe Nature</span>
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="videos">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-keeganjchecks-14524363.jpg" 
+                                     alt="Vidéo lodge" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <i class="fas fa-play-circle fa-3x mb-3"></i>
+                                        <h5 class="fw-bold mb-2">Visite Lodge</h5>
+                                        <p class="mb-0">Découvrez nos lodges en vidéo</p>
                         </div>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Le Camp Baobab offre une immersion totale dans la nature. L'engagement écologique de Kany Lodges est remarquable et inspire le respect."</p>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">Visite Lodge</h6>
+                                <p class="card-text text-muted small">Découvrez nos lodges en vidéo</p>
+                        </div>
                     </div>
-                    <div class="testimonial-author">
-                        <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&fit=crop" alt="Jean Martin">
-                        <div>
-                            <h4>Jean Martin</h4>
-                            <span>Biologiste</span>
+                </div>
+
+                    <div class="col-md-6 col-lg-4 gallery-item" data-category="videos">
+                        <div class="card border-0 shadow-sm hover-lift h-100">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                <img src="img/pexels-asadphoto-28843963.jpg" 
+                                     alt="Vidéo safari" 
+                                     class="w-100" style="height: 250px; object-fit: cover;">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <div class="text-center text-white">
+                                        <i class="fas fa-play-circle fa-3x mb-3"></i>
+                                        <h5 class="fw-bold mb-2">Safari Aventure</h5>
+                                        <p class="mb-0">Vivez l'excitation du safari en vidéo</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-primary mb-2">Safari Aventure</h6>
+                                <p class="card-text text-muted small">Vivez l'excitation du safari en vidéo</p>
                         </div>
                     </div>
                 </div>
@@ -256,69 +399,206 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-background">
-            <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop" alt="Aventure safari Afrique">
-        </div>
-        <div class="cta-overlay"></div>
-        <div class="cta-content">
-            <h2>Vivez Votre Propre Aventure</h2>
-            <p>Créez vos propres souvenirs inoubliables dans nos lodges authentiques</p>
-            <a href="contact.html" class="cta-button">Planifiez votre Voyage</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Kany Lodges & Camps</h3>
-                    <p>Votre partenaire pour un écotourisme authentique en Afrique depuis 2008.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="lodges.html">Nos Lodges</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>📧 info@kanylodges.com</p>
-                    <p>📞 +33 1 23 45 67 89</p>
-                    <p>📍 Paris, France</p>
+        <section class="cta-section position-relative py-5 text-white">
+            <div class="cta-background position-absolute top-0 start-0 w-100 h-100">
+                <img src="img/pexels-asadphoto-3155648.jpg" 
+                     alt="Éléphants dans la savane" 
+                     class="w-100 h-100 object-fit-cover">
+                <div class="cta-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+            </div>
+            
+            <div class="container position-relative text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-4 fw-bold mb-4 text-white">Prêt pour l'Aventure ?</h2>
+                        <p class="lead mb-5 text-white">Contactez-nous dès maintenant pour planifier vos services LUNATIC</p>
+                        <a href="contact.html" class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold">
+                            <i class="fas fa-paper-plane me-2"></i>Nous Contacter
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Kany Lodges & Camps. Tous droits réservés.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-star me-2 text-primary"></i>LUNATIC
+                    </h5>
+                    <p class="text-light">Votre partenaire pour une liberté de voyage hors de ce monde avec responsabilité environnementale.</p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">À Propos</a></li>
+                        <li class="mb-2"><a href="lodges.html" class="text-light text-decoration-none">Nos Services</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light text-decoration-none">Galerie</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2 text-primary"></i>joycesabwe@gmail.com
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2 text-primary"></i>+243 825 312 001
+                    </p>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Votre email">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 LUNATIC Hospitality. Tous droits réservés.</p>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Social Media Icons -->
-    <div class="social-float">
-        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.40z"/>
-            </svg>
-        </a>
-        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-        </a>
-        <a href="https://wa.me/33123456789" target="_blank" class="social-icon whatsapp">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488"/>
-            </svg>
-        </a>
-    </div>
-
-    <script src="js/main.js"></script>
-    <script src="js/gallery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- SOLUTION DIRECTE POUR LES BOUTONS DE FILTRE -->
+    <script>
+        console.log('🚀 Loading direct gallery filter solution...');
+        
+        // Attendre que la page soit complètement chargée
+        window.addEventListener('load', function() {
+            console.log('✅ Page fully loaded, initializing filter...');
+            
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            console.log('🔍 Found', filterButtons.length, 'filter buttons');
+            console.log('🔍 Found', galleryItems.length, 'gallery items');
+            
+            if (filterButtons.length === 0) {
+                console.error('❌ No filter buttons found!');
+                return;
+            }
+            
+            if (galleryItems.length === 0) {
+                console.error('❌ No gallery items found!');
+                return;
+            }
+            
+            // Ajouter un style CSS pour s'assurer que les boutons sont cliquables
+            const style = document.createElement('style');
+            style.textContent = `
+                .filter-btn {
+                    cursor: pointer !important;
+                    pointer-events: auto !important;
+                    position: relative !important;
+                    z-index: 10 !important;
+                }
+                .filter-btn:hover {
+                    background-color: var(--primary) !important;
+                    color: white !important;
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Ajouter les event listeners avec une approche différente
+            filterButtons.forEach((button, index) => {
+                console.log(`🔧 Setting up button ${index + 1}:`, button.getAttribute('data-filter'));
+                
+                // Supprimer tous les event listeners existants
+                const newButton = button.cloneNode(true);
+                button.parentNode.replaceChild(newButton, button);
+                
+                // Ajouter le nouvel event listener
+                newButton.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    
+                    const filter = this.getAttribute('data-filter');
+                    console.log('🎯 BUTTON CLICKED:', filter);
+                    
+                    // Mettre à jour le bouton actif - CORRECTION
+                    const allButtons = document.querySelectorAll('.filter-btn');
+                    allButtons.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.style.backgroundColor = '';
+                        btn.style.color = '';
+                    });
+                    this.classList.add('active');
+                    this.style.backgroundColor = '#1E90FF';
+                    this.style.color = 'white';
+                    
+                    // Filtrer les éléments avec animation
+                    let visible = 0;
+                    let hidden = 0;
+                    
+                    galleryItems.forEach((item, index) => {
+                        const category = item.getAttribute('data-category');
+                        
+                        if (filter === 'all' || category === filter) {
+                            item.style.display = 'block';
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            
+                            // Animation d'apparition
+                            setTimeout(() => {
+                                item.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, index * 50);
+                            
+                            visible++;
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                            
+                            hidden++;
+                        }
+                    });
+                    
+                    console.log(`✅ Filter applied: ${visible} visible, ${hidden} hidden`);
+                });
+                
+                // Test hover
+                newButton.addEventListener('mouseenter', function() {
+                    if (!this.classList.contains('active')) {
+                        this.style.backgroundColor = '#1E90FF';
+                        this.style.color = 'white';
+                        this.style.opacity = '0.8';
+                    }
+                });
+                
+                newButton.addEventListener('mouseleave', function() {
+                    if (!this.classList.contains('active')) {
+                        this.style.backgroundColor = '';
+                        this.style.color = '';
+                        this.style.opacity = '';
+                    }
+                });
+            });
+            
+            console.log('✅ All filter buttons are now clickable!');
+        });
+    </script>
 </body>
 </html>

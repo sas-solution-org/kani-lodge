@@ -3,170 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kany Lodges & Camps - Écotourisme Authentique en Afrique</title>
-    <meta name="description" content="Découvrez l'Afrique authentique avec Kany Lodges & Camps. Écotourisme durable, lodges traditionnels et camps immersifs dans la nature sauvage africaine.">
-    <meta name="keywords" content="écotourisme Afrique, lodge safari, camp nature, tourisme durable, savane africaine, faune sauvage, voyage responsable">
+    <title>LUNATIC Hospitality - Out of This World Freedom</title>
+    <meta name="description" content="LUNATIC Hospitality - Marque premium de conseil et de voyage éco-responsable. Une liberté hors de ce monde pour explorer le globe avec responsabilité environnementale.">
+    <meta name="keywords" content="LUNATIC Hospitality, voyage éco-responsable, conseil hôtelier, certification verte, tourisme durable, Afrique, liberté de voyage">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Kany Lodges & Camps</h2>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link active">Accueil</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">À Propos</a></li>
-                <li class="nav-item"><a href="lodges.html" class="nav-link">Nos Lodges</a></li>
-                <li class="nav-item"><a href="gallery.html" class="nav-link">Galerie</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-image">
-            <img src="https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Savane africaine au coucher du soleil" loading="eager">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Vivez l'Afrique Authentique</h1>
-            <p class="hero-subtitle">Découvrez la magie de la nature sauvage dans nos lodges écologiques et camps traditionnels</p>
-            <a href="lodges.html" class="cta-button">Découvrir nos Lodges</a>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- About Preview Section -->
-    <section class="about-preview">
-        <div class="container">
-            <div class="content-grid">
-                <div class="text-content">
-                    <h2>Notre Mission</h2>
-                    <p>Depuis plus de 15 ans, Kany Lodges & Camps vous invite à découvrir l'Afrique authentique à travers un tourisme responsable et durable. Nos établissements respectent l'environnement et soutiennent les communautés locales.</p>
-                    <a href="about.html" class="btn-secondary">En savoir plus</a>
-                </div>
-                <div class="image-content">
-                    <img src="https://images.pexels.com/photos/1670732/pexels-photo-1670732.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Village traditionnel africain">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Lodges -->
-    <section class="featured-lodges">
-        <div class="container">
-            <h2 class="section-title">Nos Lodges Exceptionnels</h2>
-            <div class="lodges-grid">
-                <div class="lodge-card">
-                    <div class="lodge-image">
-                        <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Lodge Safari Masai">
+    <!-- Header -->
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
+                    <div class="brand-icon me-3">
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="lodge-content">
-                        <h3>Lodge Safari Masai</h3>
-                        <p>Au cœur de la réserve du Masai Mara, vivez une expérience safari inoubliable dans un confort authentique.</p>
-                        <a href="lodges.html#masai" class="btn-tertiary">Découvrir</a>
-                    </div>
-                </div>
-                <div class="lodge-card">
-                    <div class="lodge-image">
-                        <img src="https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Camp Baobab">
-                    </div>
-                    <div class="lodge-content">
-                        <h3>Camp Baobab</h3>
-                        <p>Sous l'ombre des baobabs millénaires, un camp écologique qui vous connecte à la nature sauvage.</p>
-                        <a href="lodges.html#baobab" class="btn-tertiary">Découvrir</a>
-                    </div>
-                </div>
-                <div class="lodge-card">
-                    <div class="lodge-image">
-                        <img src="https://images.pexels.com/photos/2901215/pexels-photo-2901215.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Lodge Rivière Zambèze">
-                    </div>
-                    <div class="lodge-content">
-                        <h3>Lodge Rivière Zambèze</h3>
-                        <p>Au bord du fleuve mythique, profitez d'un lodge de luxe respectueux de l'environnement.</p>
-                        <a href="lodges.html#zambeze" class="btn-tertiary">Découvrir</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="cta-background">
-            <img src="https://images.pexels.com/photos/802112/pexels-photo-802112.jpeg?auto=compress&cs=tinysrgb&w=1920&h=800&fit=crop" alt="Éléphants dans la savane">
-        </div>
-        <div class="cta-overlay"></div>
-        <div class="cta-content">
-            <h2>Prêt pour l'Aventure ?</h2>
-            <p>Réservez dès maintenant votre séjour dans l'un de nos lodges et découvrez l'Afrique comme jamais auparavant.</p>
-            <a href="contact.html" class="cta-button">Nous Contacter</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Kany Lodges & Camps</h3>
-                    <p>Votre partenaire pour un écotourisme authentique en Afrique depuis 2008.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">À Propos</a></li>
-                        <li><a href="lodges.html">Nos Lodges</a></li>
-                        <li><a href="gallery.html">Galerie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                    <span class="brand-text">LUNATIC</span>
+                </a>
+                
+                <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative" href="index.html">
+                                <span>Accueil</span>
+                                <div class="nav-link-underline active"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="about.html">
+                                <span>À Propos</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="lodges.html">
+                                <span>Nos Services</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="gallery.html">
+                                <span>Galerie</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link position-relative" href="contact.html">
+                                <span>Contact</span>
+                                <div class="nav-link-underline"></div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
-                <div class="footer-section">
-                    <h4>Contact</h4>
-                    <p>📧 info@kanylodges.com</p>
-                    <p>📞 +33 1 23 45 67 89</p>
-                    <p>📍 Paris, France</p>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section position-relative vh-100 d-flex align-items-center">
+            <div class="hero-background position-absolute w-100 h-100">
+                <img src="img/pexels-asadphoto-2245203.jpg" 
+                     alt="Savane africaine au coucher du soleil" 
+                     class="w-100 h-100 object-fit-cover">
+                <div class="hero-overlay position-absolute w-100 h-100"></div>
+            </div>
+            
+            <div class="container position-relative z-index-1 text-center text-white">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-3 fw-bold mb-4">Out of This World Freedom</h1>
+                        <p class="lead mb-5">LUNATIC Hospitality vous ouvre les portes du monde selon vos règles</p>
+                        <a href="lodges.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">
+                            <i class="fas fa-compass me-2"></i>Découvrir nos Services
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Kany Lodges & Camps. Tous droits réservés.</p>
+            
+            <div class="scroll-indicator position-absolute bottom-0 start-50 translate-middle-x mb-4">
+                <i class="fas fa-chevron-down text-white fs-4"></i>
+            </div>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="py-5 section-gray">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="pe-lg-5">
+                            <h2 class="display-5 fw-bold text-primary mb-4">Notre Mission</h2>
+                            <p class="lead text-muted mb-4">Depuis plus de 15 ans, Kani Lodge vous invite à découvrir l'Afrique authentique à travers un tourisme responsable et durable.</p>
+                            <p class="text-muted mb-4">Nos établissements respectent l'environnement et soutiennent les communautés locales.</p>
+                            <a href="about.html" class="btn btn-outline-primary btn-lg rounded-pill">
+                                <i class="fas fa-info-circle me-2"></i>En savoir plus
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                                                         <img src="img/pexels-asadphoto-2245203.jpg" 
+                                  alt="Village traditionnel africain" 
+                                  class="img-fluid rounded-4 shadow-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Lodges Section -->
+        <section class="py-5 section-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-5 fw-bold text-primary mb-3">Nos Lodges Exceptionnels</h2>
+                    <p class="lead text-muted">Découvrez nos établissements uniques en pleine nature africaine</p>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm hover-lift">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                                                 <img src="img/pexels-keeganjchecks-14524375.jpg" 
+                                      alt="Lodge Safari Masai" 
+                                      class="w-100">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <a href="lodges.html#masai" class="btn btn-primary rounded-pill">
+                                        <i class="fas fa-eye me-2"></i>Découvrir
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold text-primary mb-3">Lodge Safari Masai</h5>
+                                <p class="card-text text-muted">Au cœur de la réserve du Masai Mara, vivez une expérience safari inoubliable dans un confort authentique.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success fs-6">À partir de 150€/nuit</span>
+                                    <a href="lodges.html#masai" class="btn btn-outline-primary btn-sm rounded-pill">
+                                        Voir détails
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm hover-lift">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                                                 <img src="img/pexels-keeganjchecks-14524363.jpg" 
+                                      alt="Camp Baobab" 
+                                      class="w-100">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <a href="lodges.html#baobab" class="btn btn-primary rounded-pill">
+                                        <i class="fas fa-eye me-2"></i>Découvrir
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold text-primary mb-3">Camp Baobab</h5>
+                                <p class="card-text text-muted">Sous l'ombre des baobabs millénaires, un camp écologique qui vous connecte à la nature sauvage.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success fs-6">À partir de 120€/nuit</span>
+                                    <a href="lodges.html#baobab" class="btn btn-outline-primary btn-sm rounded-pill">
+                                        Voir détails
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm hover-lift">
+                            <div class="card-img-top position-relative overflow-hidden">
+                                                                 <img src="img/pexels-keeganjchecks-19199133.jpg" 
+                                      alt="Lodge Rivière Zambèze" 
+                                      class="w-100">
+                                <div class="card-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                    <a href="lodges.html#zambeze" class="btn btn-primary rounded-pill">
+                                        <i class="fas fa-eye me-2"></i>Découvrir
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="card-title fw-bold text-primary mb-3">Lodge Rivière Zambèze</h5>
+                                <p class="card-text text-muted">Au bord du fleuve mythique, profitez d'un lodge de luxe respectueux de l'environnement.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="badge bg-success fs-6">À partir de 200€/nuit</span>
+                                    <a href="lodges.html#zambeze" class="btn btn-outline-primary btn-sm rounded-pill">
+                                        Voir détails
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section position-relative py-5 text-white">
+            <div class="cta-background position-absolute top-0 start-0 w-100 h-100">
+                <img src="img/pexels-keeganjchecks-30165025.jpg" 
+                     alt="Éléphants dans la savane" 
+                     class="w-100 h-100 object-fit-cover">
+                <div class="cta-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+            </div>
+            
+            <div class="container position-relative text-center">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="display-4 fw-bold mb-4 text-white">Prêt pour l'Aventure ?</h2>
+                        <p class="lead mb-5 text-white">Contactez-nous dès maintenant pour planifier votre séjour inoubliable avec LUNATIC Hospitality.</p>
+                        <a href="contact.html" class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-bold">
+                            <i class="fas fa-paper-plane me-2"></i>Nous Contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-star me-2 text-primary"></i>LUNATIC
+                    </h5>
+                    <p class="text-light">Votre partenaire pour une liberté de voyage hors de ce monde avec responsabilité environnementale.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="btn btn-outline-light btn-sm me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="btn btn-outline-light btn-sm me-2">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/33123456789" target="_blank" class="btn btn-outline-light btn-sm">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Navigation</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-light text-decoration-none">Accueil</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">À Propos</a></li>
+                        <li class="mb-2"><a href="lodges.html" class="text-light text-decoration-none">Nos Services</a></li>
+                        <li class="mb-2"><a href="gallery.html" class="text-light text-decoration-none">Galerie</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Contact</h6>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-envelope me-2 text-primary"></i>joycesabwe@gmail.com
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-phone me-2 text-primary"></i>+243 825 312 001
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="fas fa-map-marker-alt me-2 text-primary"></i>Kinshasa, RDC
+                    </p>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-light mb-3">Restez informé de nos dernières offres</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Votre email">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 LUNATIC Hospitality. Tous droits réservés.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Mentions légales</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Politique de confidentialité</a>
+                    <a href="#" class="text-light text-decoration-none">CGV</a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Social Media Icons -->
-    <div class="social-float">
-        <a href="https://instagram.com" target="_blank" class="social-icon instagram">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-            </svg>
-        </a>
-        <a href="https://facebook.com" target="_blank" class="social-icon facebook">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-        </a>
-        <a href="https://wa.me/33123456789" target="_blank" class="social-icon whatsapp">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.531 3.488"/>
-            </svg>
-        </a>
-    </div>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
 </html>

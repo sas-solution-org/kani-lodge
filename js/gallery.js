@@ -13,11 +13,21 @@ function initGalleryFilter() {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const galleryItems = document.querySelectorAll('.gallery-item');
 
-    if (!filterButtons.length || !galleryItems.length) return;
+    console.log('🎨 Initializing gallery filter...');
+    console.log('Filter buttons found:', filterButtons.length);
+    console.log('Gallery items found:', galleryItems.length);
+
+    if (!filterButtons.length || !galleryItems.length) {
+        console.warn('⚠️ Gallery filter elements not found!');
+        return;
+    }
 
     filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
             const filter = this.getAttribute('data-filter');
+            console.log('Filter button clicked:', filter);
             
             // Update active button
             filterButtons.forEach(btn => btn.classList.remove('active'));
@@ -25,18 +35,31 @@ function initGalleryFilter() {
             
             // Filter gallery items
             filterGalleryItems(galleryItems, filter);
+            
+            // Announce filter change for accessibility
+            announceFilterChange(filter);
         });
     });
 
     // Initial filter setup
     const activeFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter') || 'all';
+    console.log('Initial filter:', activeFilter);
     filterGalleryItems(galleryItems, activeFilter);
+    
+    console.log('🎨 Gallery filter initialized successfully!');
 }
 
 function filterGalleryItems(items, filter) {
+    console.log('Filtering items by:', filter);
+    
+    let visibleCount = 0;
+    let hiddenCount = 0;
+    
     items.forEach((item, index) => {
         const category = item.getAttribute('data-category');
         const shouldShow = filter === 'all' || category === filter;
+        
+        console.log(`Item ${index + 1}: category="${category}", filter="${filter}", shouldShow=${shouldShow}`);
         
         if (shouldShow) {
             item.style.display = 'block';
@@ -49,6 +72,8 @@ function filterGalleryItems(items, filter) {
                 item.style.opacity = '1';
                 item.style.transform = 'translateY(0)';
             }, index * 50);
+            
+            visibleCount++;
         } else {
             item.style.opacity = '0';
             item.style.transform = 'translateY(20px)';
@@ -56,8 +81,12 @@ function filterGalleryItems(items, filter) {
             setTimeout(() => {
                 item.style.display = 'none';
             }, 300);
+            
+            hiddenCount++;
         }
     });
+    
+    console.log(`Filter complete: ${visibleCount} items visible, ${hiddenCount} items hidden`);
 }
 
 // ===== LIGHTBOX =====

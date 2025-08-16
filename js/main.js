@@ -44,15 +44,13 @@ function initNavigation() {
         });
     }
 
-    // Navbar scroll effect
+    // Enhanced navbar scroll effect
     if (navbar) {
         window.addEventListener('scroll', function() {
             if (window.scrollY > 100) {
-                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+                navbar.classList.add('scrolled');
             } else {
-                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = 'none';
+                navbar.classList.remove('scrolled');
             }
         });
     }
@@ -71,22 +69,7 @@ function initNavigation() {
 
 // ===== SCROLL EFFECTS =====
 function initScrollEffects() {
-    // Parallax effect for hero sections
-    const heroSections = document.querySelectorAll('.hero, .page-header, .cta-section');
-    
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-        const rate = scrolled * -0.5;
-
-        heroSections.forEach(section => {
-            const heroImage = section.querySelector('.hero-image img, .header-image img, .cta-background img');
-            if (heroImage) {
-                heroImage.style.transform = `translateY(${rate}px)`;
-            }
-        });
-    });
-
-    // Scroll indicator animation
+    // Scroll indicator animation only - removed problematic parallax
     const scrollIndicator = document.querySelector('.scroll-indicator');
     if (scrollIndicator) {
         window.addEventListener('scroll', function() {
@@ -115,22 +98,12 @@ function initAnimations() {
         });
     }, observerOptions);
 
-    // Observe elements for animation
-    const animateElements = document.querySelectorAll(`
-        .lodge-card,
-        .value-card,
-        .team-member,
-        .timeline-item,
-        .testimonial,
-        .gallery-item,
-        .faq-item,
-        .contact-item
-    `);
-
-    animateElements.forEach((el, index) => {
+    // Observe all elements with fade-in class
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
-        el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
     });
 
